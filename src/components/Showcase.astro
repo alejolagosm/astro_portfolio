@@ -1,0 +1,59 @@
+---
+---
+
+<section class="showcase">
+  <div class="showcase-text">
+    <h1>Welcome!</h1>
+    <p>I'm Alejandro, web developer and data geek</p>
+  </div>
+</section>
+
+<style>
+  .showcase {
+    height: auto;
+    background-color: var(--color-secondary);
+    background-image: url('../images/alejo.jpeg'),
+      linear-gradient(to bottom, var(--color-primary), rgb(15 23 42 / 0));
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 30px;
+    position: relative;
+  }
+
+  .showcase:after {
+    content: '';
+    /* background-color: rgba(0, 0, 0, 0.4); */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
+  .showcase > * {
+    position: relative;
+    z-index: 100;
+  }
+
+  .showcase-blog {
+    min-height: 300px;
+  }
+
+  .showcase-text {
+    max-width: 500px;
+    color: #fff;
+    text-align: center;
+    margin: 50px auto;
+  }
+
+  .showcase h1 {
+    font-size: 50px;
+    color: #fff;
+    margin-bottom: 20px;
+  }
+
+  .showcase p {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+</style>
